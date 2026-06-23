@@ -27,7 +27,7 @@ export default function Projetos() {
       id: "projeto-kaiu-kombi",
       tag: "Espetáculo",
       tagBg: "bg-accent text-ink",
-      image: "/assets/kombi_cultural.png",
+      image: "/assets/kaiu-da-kombi.jpg",
       alt: "A Kombi do espetáculo itinerante estacionada na praça decorada",
       title: "Kaiu da Kombi",
       description:
@@ -39,7 +39,7 @@ export default function Projetos() {
       id: "projeto-musica-movimento",
       tag: "Oficinas",
       tagBg: "bg-primary text-white",
-      image: "/assets/oficinas_musica.png",
+      image: "/assets/musica-e-movimento.jpg",
       alt: "Grupo de jovens em oficina musical tocando instrumentos acústicos",
       title: "Música e Movimento",
       description:
@@ -51,7 +51,7 @@ export default function Projetos() {
       id: "projeto-jogando-cima",
       tag: "Circo-Educação",
       tagBg: "bg-primary text-white",
-      image: "/assets/oficinas_circo.png",
+      image: "/assets/jpc.jpg",
       alt: "Crianças praticando malabares nas oficinas de circo",
       title: "Jogando Para Cima",
       description:

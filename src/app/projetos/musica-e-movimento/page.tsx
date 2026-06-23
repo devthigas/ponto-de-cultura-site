@@ -43,7 +43,7 @@ export default function MusicaEMovimentoDetail() {
       {/* FULL WIDTH BANNER */}
       <section className="relative h-[60vh] min-h-[400px] w-full bg-slate-900 overflow-hidden">
         <Image
-          src="/assets/oficinas_musica.png"
+          src="/assets/musica-e-movimento.jpg"
           alt="Oficina de Música e Movimento"
           fill
           priority
@@ -59,9 +59,6 @@ export default function MusicaEMovimentoDetail() {
             >
               <ArrowLeft className="w-5 h-5" /> Voltar para Projetos
             </Link>
-            <span className="inline-block text-xs font-bold font-title uppercase tracking-widest text-accent mb-3">
-              Oficinas Artísticas
-            </span>
             <h1 className="font-title font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white mb-4">
               Música e Movimento
             </h1>

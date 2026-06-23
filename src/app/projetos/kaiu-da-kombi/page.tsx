@@ -45,7 +45,7 @@ export default function KaiuDaKombiDetail() {
       {/* FULL WIDTH BANNER */}
       <section className="relative h-[60vh] min-h-[400px] w-full bg-slate-900 overflow-hidden">
         <Image
-          src="/assets/kombi.png"
+          src="/assets/kaiu-da-kombi.jpg"
           alt="Espetáculo Kaiu da Kombi"
           fill
           priority
@@ -61,9 +61,6 @@ export default function KaiuDaKombiDetail() {
             >
               <ArrowLeft className="w-5 h-5" /> Voltar para Projetos
             </Link>
-            <span className="inline-block text-xs font-bold font-title uppercase tracking-widest text-accent mb-3">
-              Espetáculo Itinerante
-            </span>
             <h1 className="font-title font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white mb-4">
               Kaiu da Kombi
             </h1>
