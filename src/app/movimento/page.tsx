@@ -126,16 +126,7 @@ export default function Movimento() {
 
       {/* HISTORY DETAIL */}
       <section className="py-20 bg-slate-50" id="movimento-history-detail">
-        <div className="container mx-auto px-4 max-w-[1140px] grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-16 items-center">
-          <div className="fade-in">
-            <Image
-              src="/assets/kombi_cultural.png"
-              alt="Ilustração da Kombi enfeitada e decorada que representa o Ponto de Cultura"
-              width={500}
-              height={400}
-              className="w-full h-auto rounded-premium shadow-premium border border-line"
-            />
-          </div>
+        <div className="container mx-auto px-4 max-w-[1140px] grid grid-cols-1 gap-16 items-center">
           <div className="history-content fade-in flex flex-col items-start">
             <span className="inline-block text-xs font-bold font-title uppercase tracking-widest text-primary mb-3">
               História & Propósito
