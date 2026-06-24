@@ -59,18 +59,6 @@ export default function Projetos() {
       details: ["🤹 Acrobacia e Malabares", "Sede & Escolas"],
       link: ""
     },
-    {
-      id: "projeto-fuxico-bunitas",
-      tag: "Geração de Renda",
-      tagBg: "bg-deep-blue text-white",
-      image: "/assets/artesanato_comunidade.png",
-      alt: "Artesanato feito com retalhos de pano coloridos pelo grupo Fuxico das Bunitas",
-      title: "Fuxico das Bunitas",
-      description:
-        "Iniciativa de artesanato têxtil voltada para a autonomia e geração de renda de mulheres e mães da comunidade. As participantes expõem e comercializam seus trabalhos em feiras e lojas da Região das Hortênsias.",
-      details: ["🧶 Costura Criativa e Fuxico", "Canela/RS"],
-      link: ""
-    },
   ];
 
   return (
