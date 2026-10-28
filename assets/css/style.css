@@ -61,6 +61,30 @@ button {
   color: #ffffff;
 }
 
+html body .bg-primary,
+html body .bg-brand-pink {
+  background-color: var(--brand-pink);
+}
+
+html body .bg-accent,
+html body .bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+
+html body .bg-deep-blue,
+html body .bg-brand-blue {
+  background-color: var(--brand-blue);
+}
+
+html body .bg-brand-green {
+  background-color: var(--brand-green);
+}
+
+html body .bg-primary.text-white,
+html body .bg-brand-pink.text-white {
+  color: #ffffff;
+}
+
 .text-primary {
   color: #a10c76;
 }
