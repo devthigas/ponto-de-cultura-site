@@ -3,8 +3,8 @@ title: Ponto de Cultura Kombinação
 email: contato@culturapontokombi.com.br
 description: >-
   O Ponto de Cultura Kombinação promove inclusão social e formação artística em Canela e Gramado, RS através de oficinas gratuitas de música, circo, teatro e artesanato.
-baseurl: ""
-url: ""
+baseurl: "/ponto-de-cultura-site"
+url: "https://devthigas.github.io"
 
 # Build settings
 plugins:
