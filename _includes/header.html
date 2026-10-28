@@ -1,0 +1,86 @@
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b bg-white/80 backdrop-blur-sm border-line/40">
+    <div class="container mx-auto px-4 max-w-[1140px] flex justify-between items-center h-20">
+
+        <!-- Logo -->
+        <a href="{{ '/' | relative_url }}" class="flex items-center gap-3">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logotipo Ponto de Cultura Kombinação" class="w-auto h-[45px]" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block">
+            <ul class="flex gap-8 items-center list-none m-0 p-0">
+                <li>
+                    <a href="{{ '/' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url == '/' or page.url == '/index.html' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ '/movimento.html' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url contains '/movimento' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
+                        Nosso Movimento
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ '/projetos.html' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url contains '/projetos' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
+                        Projetos
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ '/trupe.html' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url contains '/trupe' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
+                        Nossa Trupe
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ '/contato.html' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url contains '/contato' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Button -->
+        <button
+                id="menu-toggle"
+                class="md:hidden cursor-pointer flex flex-col gap-1.5 p-2 bg-none border-none outline-none"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+        >
+            <span id="bar-top" class="block w-7 h-[3px] bg-ink rounded-full transition-transform duration-300"></span>
+            <span id="bar-mid" class="block w-7 h-[3px] bg-ink rounded-full transition-opacity duration-300"></span>
+            <span id="bar-bot" class="block w-7 h-[3px] bg-ink rounded-full transition-transform duration-300"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div
+            id="mobile-drawer"
+            class="fixed top-20 left-[-100%] w-full h-[calc(100vh-80px)] bg-white transition-all duration-300 md:hidden border-t border-line shadow-premium flex flex-col px-6 py-10 gap-6"
+    >
+        <ul class="flex flex-col gap-6 list-none p-0 m-0">
+            <li>
+                <a href="{{ '/' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url == '/' or page.url == '/index.html' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
+                    Início
+                </a>
+            </li>
+            <li>
+                <a href="{{ '/movimento.html' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url contains '/movimento' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
+                    Nosso Movimento
+                </a>
+            </li>
+            <li>
+                <a href="{{ '/projetos.html' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url contains '/projetos' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
+                    Projetos
+                </a>
+            </li>
+            <li>
+                <a href="{{ '/trupe.html' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url contains '/trupe' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
+                    Nossa Trupe
+                </a>
+            </li>
+            <li>
+                <a href="{{ '/contato.html' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url contains '/contato' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
+                    Contato
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
