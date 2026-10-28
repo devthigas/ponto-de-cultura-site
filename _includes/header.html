@@ -25,6 +25,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ '/vaquinha.html' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url contains '/vaquinha' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
+                        Vaquinha
+                    </a>
+                </li>
+                <li>
                     <a href="{{ '/trupe.html' | relative_url }}" class="font-title font-semibold relative py-2 transition-colors duration-200 {% if page.url contains '/trupe' %}text-primary after:w-full{% else %}text-ink-soft hover:text-primary after:w-0 hover:after:w-full{% endif %} after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-primary after:rounded-full after:transition-all after:duration-300">
                         Nossa Trupe
                     </a>
@@ -69,6 +74,11 @@
             <li>
                 <a href="{{ '/projetos.html' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url contains '/projetos' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
                     Projetos
+                </a>
+            </li>
+            <li>
+                <a href="{{ '/vaquinha.html' | relative_url }}" class="font-title font-bold text-lg block py-2 {% if page.url contains '/vaquinha' %}text-primary{% else %}text-ink-soft hover:text-primary{% endif %}">
+                    Vaquinha
                 </a>
             </li>
             <li>
