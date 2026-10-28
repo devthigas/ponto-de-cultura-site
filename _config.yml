@@ -1,6 +1,8 @@
 # Site settings
 title: Ponto de Cultura Kombinação
 email: contato@culturapontokombi.com.br
+whatsapp_number: "5519974047622"
+whatsapp_display: "(19) 97404-7622"
 description: >-
   O Ponto de Cultura Kombinação desenvolve projetos, espetáculos, oficinas e experiências culturais que unem arte, educação e transformação social.
 baseurl: "/ponto-de-cultura-site"

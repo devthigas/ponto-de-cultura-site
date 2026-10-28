@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   const alertBox = document.getElementById('contact-alert');
-  const submitBtn = document.getElementById('contact-submit-btn');
   const subjectSelect = document.getElementById('subject');
 
   // Preselect subject from URL query string if present (e.g. ?subject=espetaculo)
@@ -35,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return re.test(String(email).toLowerCase());
   }
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
     if (alertBox) alertBox.classList.add('hidden');
 
     const name = form.elements['name'].value.trim();
@@ -54,24 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Set loading state
-    const originalBtnText = submitBtn.innerHTML;
-    submitBtn.disabled = true;
-    submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
-    submitBtn.innerHTML = 'Enviando...';
+    const whatsappNumber = form.dataset.whatsappNumber;
+    const subjectLabel = subjectSelect.selectedOptions[0].text;
+    const whatsappMessage = [
+      'Olá! Gostaria de falar com o Ponto de Cultura Kombinação.',
+      `Nome: ${name}`,
+      `E-mail: ${email}`,
+      `Assunto: ${subjectLabel}`,
+      'Mensagem:',
+      message,
+    ].join('\n');
 
-    try {
-      // Simulate network request
-      await new Promise((resolve) => setTimeout(resolve, 1200));
-
-      showAlert('Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.', 'success');
-      form.reset();
-    } catch (err) {
-      showAlert('Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.', 'error');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-      submitBtn.innerHTML = originalBtnText;
-    }
+    window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   });
 });

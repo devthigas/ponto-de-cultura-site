@@ -85,7 +85,7 @@ extra_js:
                     <h4 class="font-title font-bold text-lg text-white mb-1">
                       Telefone / WhatsApp
                     </h4>
-                    <p class="text-white/75 text-[0.92rem]">(54) 99999-9999</p>
+                    <a class="text-white/75 text-[0.92rem] hover:text-white" href="https://wa.me/{{ site.whatsapp_number }}" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_display }}</a>
                   </div>
                 </div>
 
@@ -118,7 +118,10 @@ extra_js:
             <!-- Alert feedback container -->
             <div id="contact-alert" class="hidden rounded-[12px] p-4 mb-6 font-semibold text-sm"></div>
 
-            <form id="contact-form" noValidate class="flex flex-col gap-6">
+            <form id="contact-form" data-whatsapp-number="{{ site.whatsapp_number }}" noValidate class="flex flex-col gap-6">
+              <p class="text-sm text-ink-soft leading-relaxed">
+                Preencha os campos e continue a conversa pelo WhatsApp. Sua mensagem ficará pronta para você revisar e enviar.
+              </p>
               <div>
                 <label for="name" class="font-semibold text-sm text-ink mb-2 block">
                   Seu Nome *
@@ -186,7 +189,7 @@ extra_js:
                 id="contact-submit-btn"
                 class="w-full text-center px-8 py-3.5 bg-primary hover:bg-[#e02f61] text-white font-title font-bold rounded-premium shadow-[0_8px_20px_rgba(255,63,115,0.25)] hover:shadow-[0_12px_24px_rgba(255,63,115,0.35)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
               >
-                Enviar Mensagem
+                Continuar no WhatsApp
               </button>
             </form>
           </div>
