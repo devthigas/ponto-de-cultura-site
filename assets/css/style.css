@@ -1,30 +1,34 @@
 /* Base styles & variables */
 :root {
   --background: #ffffff;
-  --foreground: #1f2126;
-  --primary: #ff3f73;
+  --foreground: #211f1e;
+  --brand-yellow: #f2d13a;
+  --brand-pink: #e812aa;
+  --brand-blue: #1c6edb;
+  --brand-green: #1ba73a;
+  --primary: var(--brand-pink);
   --primary-foreground: #ffffff;
-  --secondary: #dde2de;
-  --secondary-foreground: #1f2126;
-  --muted: #f8fafc;
-  --muted-foreground: #404957;
-  --accent: #ffcd38;
-  --accent-foreground: #1f2126;
-  --border: #dde2de;
-  --input: #dde2de;
-  --ring: #ff3f73;
+  --secondary: #d1d0c8;
+  --secondary-foreground: #211f1e;
+  --muted: #f7f6f2;
+  --muted-foreground: #554f49;
+  --accent: var(--brand-yellow);
+  --accent-foreground: #211f1e;
+  --border: #d1d0c8;
+  --input: #d1d0c8;
+  --ring: var(--brand-blue);
   --radius: 18px;
 
-  --deep-blue: #0a4e82;
-  --ink: #1f2126;
-  --ink-soft: #404957;
-  --line: #dde2de;
-  --shadow-premium: 0 16px 28px rgba(24, 32, 45, 0.12);
+  --deep-blue: var(--brand-blue);
+  --ink: #211f1e;
+  --ink-soft: #554f49;
+  --line: #d1d0c8;
+  --shadow-premium: 0 16px 28px rgba(33, 31, 30, 0.12);
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Lato', system-ui, -apple-system, sans-serif;
 }
 
 body {
@@ -35,7 +39,60 @@ body {
 }
 
 .font-title {
-  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1.font-title,
+h2.font-title {
+  font-family: 'Limelight', Georgia, serif;
+}
+
+h3.font-title,
+h4.font-title {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+a,
+button {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.bg-primary.text-white {
+  color: #ffffff;
+}
+
+.text-primary {
+  color: #a10c76;
+}
+
+h1.font-title:not(.text-white),
+h2.font-title:not(.text-white),
+h3.font-title:not(.text-white),
+h4.font-title:not(.text-white) {
+  color: var(--ink);
+}
+
+h1.font-title.text-white,
+h2.font-title.text-white,
+h3.font-title.text-white,
+h4.font-title.text-white {
+  color: #ffffff;
+}
+
+h3.font-title.text-brand-green {
+  color: #13782b;
+}
+
+.text-deep-blue\/85 {
+  color: rgb(33 31 30 / 85%);
+}
+
+.text-brand-green {
+  color: #13782b;
+}
+
+.hover\:text-primary:hover {
+  color: #850a63;
 }
 
 /* Custom CSS Scroll Fade animation */
